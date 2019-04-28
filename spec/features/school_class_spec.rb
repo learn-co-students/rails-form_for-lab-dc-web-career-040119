@@ -58,7 +58,7 @@ end
 
 describe 'Show page' do
   let(:school_class) { SchoolClass.create(title: "Computer Science", room_number: 5) }
-
+# TODO show someone this test
   it 'renders properly' do
     visit school_class_path(school_class)
     expect(page.status_code).to eq(200)
